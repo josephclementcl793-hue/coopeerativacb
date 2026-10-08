@@ -1,1 +1,1542 @@
-<meta http-equiv="refresh" content="0; url= https://cblineacbcoop.vercel.app/">
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3Gjr Gestão Contábil | Contabilidade em Vitória da Conquista - BA</title>
+
+    <meta name="description" content="3Gjr Gestão Contábil LTDA. Serviços de contabilidade para empresas em Vitória da Conquista e região. Contabilidade, gestão fiscal, tributária e empresarial.">
+
+    <meta name="keywords" content="contabilidade Vitória da Conquista, contador Vitória da Conquista, escritório contábil Bahia, gestão contábil, 3Gjr Gestão Contábil">
+
+    <meta name="author" content="3Gjr Gestão Contábil LTDA">
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+            --primary: #123c69;
+            --primary-dark: #0b2948;
+            --secondary: #198754;
+            --light-bg: #f5f8fb;
+            --text: #263238;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: #ffffff;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            background: #ffffff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 1.35rem;
+        }
+
+        .navbar-brand span {
+            color: var(--secondary);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: #34495e;
+            margin-left: 10px;
+        }
+
+        .nav-link:hover {
+            color: var(--secondary);
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 680px;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    rgba(11,41,72,0.97),
+                    rgba(18,60,105,0.91)
+                ),
+                url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1800&q=80');
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.4rem, 5vw, 4.4rem);
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .hero h1 span {
+            color: #62d39a;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 650px;
+            color: rgba(255,255,255,0.88);
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            margin-top: 30px;
+        }
+
+        .btn-main {
+            background: var(--secondary);
+            border: none;
+            color: white;
+            padding: 14px 26px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            background: #157347;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-light-custom {
+            border: 1px solid rgba(255,255,255,0.6);
+            color: white;
+            padding: 14px 26px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .btn-outline-light-custom:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* SECTION */
+
+        .section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: #667085;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        /* CARDS */
+
+        .service-card {
+            background: white;
+            border: none;
+            border-radius: 15px;
+            padding: 32px;
+            height: 100%;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+
+        .service-icon {
+            width: 62px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e8f6ef;
+            color: var(--secondary);
+            border-radius: 14px;
+            font-size: 1.7rem;
+            margin-bottom: 22px;
+        }
+
+        .service-card h4 {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .service-card p {
+            color: #667085;
+            line-height: 1.7;
+        }
+
+        /* ABOUT */
+
+        .about-section {
+            background: var(--light-bg);
+        }
+
+        .about-box {
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+        }
+
+        .check-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        .check-item i {
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+
+        /* STATS */
+
+        .stats {
+            background: var(--primary);
+            color: white;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-box i {
+            font-size: 2rem;
+            color: #62d39a;
+            margin-bottom: 12px;
+        }
+
+        .stat-box h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .stat-box p {
+            color: rgba(255,255,255,0.7);
+            margin: 0;
+        }
+
+        /* COMPANY DATA */
+
+        .company-data {
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 17px 25px;
+            border-bottom: 1px solid #edf0f2;
+        }
+
+        .data-row:last-child {
+            border-bottom: none;
+        }
+
+        .data-label {
+            color: #667085;
+            font-weight: 500;
+        }
+
+        .data-value {
+            text-align: right;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* CONTACT */
+
+        .contact-section {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary-dark),
+                    var(--primary)
+                );
+            color: white;
+        }
+
+        .contact-card {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 18px;
+            padding: 30px;
+            height: 100%;
+        }
+
+        .contact-card i {
+            color: #62d39a;
+            font-size: 1.7rem;
+        }
+
+        .contact-card h5 {
+            margin-top: 15px;
+            font-weight: 700;
+        }
+
+        .contact-card a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            color: #62d39a;
+        }
+
+        /* CTA */
+
+        .cta {
+            background: #e8f6ef;
+            padding: 70px 0;
+        }
+
+        .cta h2 {
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #071b2e;
+            color: rgba(255,255,255,0.75);
+            padding: 50px 0 25px;
+        }
+
+        footer h5 {
+            color: white;
+            font-weight: 700;
+        }
+
+        footer a {
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 35px;
+            padding-top: 20px;
+        }
+
+        /* FLOATING BUTTON */
+
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            background: #198754;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            z-index: 999;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            text-decoration: none;
+        }
+
+        .floating-contact:hover {
+            color: white;
+            transform: scale(1.08);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 768px) {
+
+            .hero {
+                min-height: 620px;
+            }
+
+            .section {
+                padding: 65px 0;
+            }
+
+            .data-row {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .data-value {
+                text-align: left;
+            }
+
+            .about-box {
+                padding: 25px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="navbar navbar-expand-lg sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#inicio">
+            3Gjr <span>Gestão Contábil</span>
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#empresa">Empresa</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicos">Serviços</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#dados">Empresa</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+
+                    <a
+                        href="mailto:contabilidadeleitte@gmail.com"
+                        class="btn btn-success px-4"
+                    >
+                        Fale Conosco
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="inicio">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-8">
+
+                <span class="badge bg-success px-3 py-2 mb-3">
+                    <i class="bi bi-patch-check-fill me-1"></i>
+                    Gestão Contábil
+                </span>
+
+                <h1>
+                    Contabilidade que ajuda sua empresa a
+                    <span>crescer.</span>
+                </h1>
+
+                <p class="mt-4">
+                    Soluções contábeis, fiscais e empresariais para
+                    ajudar sua empresa a manter suas obrigações em dia,
+                    organizar seus processos e tomar decisões com mais
+                    segurança.
+                </p>
+
+                <div class="hero-buttons d-flex flex-wrap gap-3">
+
+                    <a
+                        href="mailto:contabilidadeleitte@gmail.com"
+                        class="btn btn-main"
+                    >
+                        <i class="bi bi-envelope-fill me-2"></i>
+                        Solicitar atendimento
+                    </a>
+
+                    <a
+                        href="#servicos"
+                        class="btn btn-outline-light-custom"
+                    >
+                        Conheça nossos serviços
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-box">
+
+                    <i class="bi bi-building"></i>
+
+                    <h3>3Gjr</h3>
+
+                    <p>Gestão Contábil</p>
+
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-box">
+
+                    <i class="bi bi-shield-check"></i>
+
+                    <h3>Ativa</h3>
+
+                    <p>Empresa regular</p>
+
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-box">
+
+                    <i class="bi bi-graph-up-arrow"></i>
+
+                    <h3>Contábil</h3>
+
+                    <p>Gestão empresarial</p>
+
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="stat-box">
+
+                    <i class="bi bi-geo-alt"></i>
+
+                    <h3>BA</h3>
+
+                    <p>Vitória da Conquista</p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EMPRESA
+========================= -->
+
+<section class="section about-section" id="empresa">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <span class="text-success fw-bold">
+                    SOBRE A EMPRESA
+                </span>
+
+                <h2 class="section-title mt-2">
+                    Uma gestão contábil pensada para empresas
+                </h2>
+
+                <p class="text-muted lh-lg">
+
+                    A <strong>3Gjr Gestão Contábil</strong> é uma empresa
+                    especializada em atividades de contabilidade,
+                    oferecendo suporte para empresas que buscam
+                    organização, acompanhamento e maior segurança
+                    em sua gestão.
+
+                </p>
+
+                <p class="text-muted lh-lg">
+
+                    Nosso trabalho é baseado em organização,
+                    responsabilidade e acompanhamento das necessidades
+                    contábeis da empresa.
+
+                </p>
+
+                <div class="mt-4">
+
+                    <div class="check-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Atendimento profissional e personalizado</span>
+                    </div>
+
+                    <div class="check-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Organização das informações contábeis</span>
+                    </div>
+
+                    <div class="check-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Acompanhamento das obrigações empresariais</span>
+                    </div>
+
+                    <div class="check-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Suporte para a gestão do negócio</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="about-box">
+
+                    <div class="d-flex align-items-center mb-4">
+
+                        <div class="service-icon mb-0 me-3">
+                            <i class="bi bi-calculator"></i>
+                        </div>
+
+                        <div>
+
+                            <h4 class="mb-1">
+                                3Gjr Gestão Contábil
+                            </h4>
+
+                            <small class="text-muted">
+                                Contabilidade e gestão empresarial
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <p class="text-muted">
+
+                        Atuamos em Vitória da Conquista, Bahia,
+                        oferecendo serviços relacionados às atividades
+                        de contabilidade para empresas.
+
+                    </p>
+
+                    <hr>
+
+                    <div class="row">
+
+                        <div class="col-6 mb-3">
+
+                            <small class="text-muted">
+                                CNPJ
+                            </small>
+
+                            <div class="fw-bold">
+                                58.622.152/0001-06
+                            </div>
+
+                        </div>
+
+                        <div class="col-6 mb-3">
+
+                            <small class="text-muted">
+                                CRC
+                            </small>
+
+                            <div class="fw-bold">
+                                BA-009988/O
+                            </div>
+
+                        </div>
+
+                        <div class="col-6">
+
+                            <small class="text-muted">
+                                Porte
+                            </small>
+
+                            <div class="fw-bold">
+                                Micro Empresa
+                            </div>
+
+                        </div>
+
+                        <div class="col-6">
+
+                            <small class="text-muted">
+                                Regime
+                            </small>
+
+                            <div class="fw-bold">
+                                Simples Nacional
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVIÇOS
+========================= -->
+
+<section class="section" id="servicos">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <span class="text-success fw-bold">
+                NOSSOS SERVIÇOS
+            </span>
+
+            <h2 class="section-title mt-2">
+                Soluções para sua empresa
+            </h2>
+
+            <p class="section-subtitle">
+                Serviços contábeis pensados para ajudar sua empresa
+                a manter organização e acompanhamento das suas
+                principais necessidades administrativas.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-calculator"></i>
+                    </div>
+
+                    <h4>Contabilidade</h4>
+
+                    <p>
+                        Organização e acompanhamento das informações
+                        contábeis da empresa.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-file-earmark-text"></i>
+                    </div>
+
+                    <h4>Obrigações Contábeis</h4>
+
+                    <p>
+                        Acompanhamento das rotinas e obrigações
+                        relacionadas à atividade contábil.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-bar-chart-line"></i>
+                    </div>
+
+                    <h4>Gestão Empresarial</h4>
+
+                    <p>
+                        Informações organizadas para apoiar o
+                        acompanhamento e a gestão do negócio.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-receipt"></i>
+                    </div>
+
+                    <h4>Gestão Fiscal</h4>
+
+                    <p>
+                        Suporte às rotinas fiscais e acompanhamento
+                        das informações necessárias à empresa.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-pie-chart"></i>
+                    </div>
+
+                    <h4>Informações Gerenciais</h4>
+
+                    <p>
+                        Organização das informações para facilitar
+                        o acompanhamento dos resultados empresariais.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+
+                    <h4>Atendimento</h4>
+
+                    <p>
+                        Atendimento para esclarecer dúvidas e
+                        orientar sobre as necessidades contábeis
+                        da empresa.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DIFERENCIAIS
+========================= -->
+
+<section class="section about-section">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <span class="text-success fw-bold">
+                POR QUE CONTAR COM A 3GJR?
+            </span>
+
+            <h2 class="section-title mt-2">
+                Organização para cuidar do seu negócio
+            </h2>
+
+            <p class="section-subtitle">
+                Uma estrutura pensada para tornar o relacionamento
+                com a contabilidade mais simples e organizado.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="text-center p-4">
+
+                    <div class="service-icon mx-auto">
+
+                        <i class="bi bi-person-check"></i>
+
+                    </div>
+
+                    <h4 class="fw-bold">
+                        Atendimento próximo
+                    </h4>
+
+                    <p class="text-muted">
+                        Comunicação clara para facilitar o
+                        acompanhamento das demandas da empresa.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="text-center p-4">
+
+                    <div class="service-icon mx-auto">
+
+                        <i class="bi bi-shield-check"></i>
+
+                    </div>
+
+                    <h4 class="fw-bold">
+                        Responsabilidade
+                    </h4>
+
+                    <p class="text-muted">
+                        Organização das informações e atenção
+                        às rotinas contábeis do negócio.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="text-center p-4">
+
+                    <div class="service-icon mx-auto">
+
+                        <i class="bi bi-lightning-charge"></i>
+
+                    </div>
+
+                    <h4 class="fw-bold">
+                        Praticidade
+                    </h4>
+
+                    <p class="text-muted">
+                        Processos organizados para tornar as
+                        rotinas empresariais mais práticas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DADOS DA EMPRESA
+========================= -->
+
+<section class="section" id="dados">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <span class="text-success fw-bold">
+                INFORMAÇÕES EMPRESARIAIS
+            </span>
+
+            <h2 class="section-title mt-2">
+                Dados da 3Gjr Gestão Contábil
+            </h2>
+
+            <p class="section-subtitle">
+                Informações cadastrais e empresariais.
+            </p>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-9">
+
+                <div class="company-data">
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Razão Social
+                        </span>
+
+                        <span class="data-value">
+                            3Gjr Gestão Contábil LTDA
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Nome Fantasia
+                        </span>
+
+                        <span class="data-value">
+                            3Gjr Gestão Contábil
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            CNPJ
+                        </span>
+
+                        <span class="data-value">
+                            58.622.152/0001-06
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            CRC
+                        </span>
+
+                        <span class="data-value">
+                            BA-009988/O
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Data de abertura
+                        </span>
+
+                        <span class="data-value">
+                            04/01/2025
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Natureza Jurídica
+                        </span>
+
+                        <span class="data-value">
+                            Sociedade Empresária Limitada
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Porte
+                        </span>
+
+                        <span class="data-value">
+                            Micro Empresa
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Regime Tributário
+                        </span>
+
+                        <span class="data-value">
+                            Simples Nacional
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Capital Social
+                        </span>
+
+                        <span class="data-value">
+                            R$ 20.000,00
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Situação Cadastral
+                        </span>
+
+                        <span class="data-value text-success">
+                            <i class="bi bi-check-circle-fill"></i>
+                            Ativa
+                        </span>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <span class="data-label">
+                            Atividade Principal
+                        </span>
+
+                        <span class="data-value">
+                            69.20-6-01 — Atividades de contabilidade
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-8">
+
+                <span class="text-success fw-bold">
+                    FALE COM A 3GJR
+                </span>
+
+                <h2 class="mt-2">
+                    Precisa de suporte contábil para sua empresa?
+                </h2>
+
+                <p class="text-muted mt-3 mb-0">
+                    Entre em contato conosco para conhecer nossos
+                    serviços e conversar sobre as necessidades
+                    da sua empresa.
+                </p>
+
+            </div>
+
+            <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+                <a
+                    href="mailto:contabilidadeleitte@gmail.com"
+                    class="btn btn-main"
+                >
+                    <i class="bi bi-envelope-fill me-2"></i>
+                    Entrar em contato
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTATO
+========================= -->
+
+<section class="section contact-section" id="contato">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="text-success fw-bold">
+                ENTRE EM CONTATO
+            </span>
+
+            <h2 class="fw-bold mt-2">
+                Estamos à disposição
+            </h2>
+
+            <p class="text-white-50">
+                Utilize um dos canais abaixo para falar com a
+                3Gjr Gestão Contábil.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="contact-card">
+
+                    <i class="bi bi-envelope-fill"></i>
+
+                    <h5>E-mail</h5>
+
+                    <a href="mailto:contabilidadeleitte@gmail.com">
+                        contabilidadeleitte@gmail.com
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="contact-card">
+
+                    <i class="bi bi-telephone-fill"></i>
+
+                    <h5>Telefone</h5>
+
+                    <a href="tel:+557730820882">
+                        (77) 3082-0882
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="contact-card">
+
+                    <i class="bi bi-geo-alt-fill"></i>
+
+                    <h5>Endereço</h5>
+
+                    <p class="mb-0 text-white-50">
+
+                        Avenida Itabuna, 2569<br>
+                        Sala 202 — Bairro Brasil<br>
+                        Vitória da Conquista — BA<br>
+                        CEP 45051-070
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAPA -->
+
+        <div class="mt-5">
+
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Avenida%20Itabuna%202569%20Vit%C3%B3ria%20da%20Conquista%20BA&output=embed"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-lg-5">
+
+                <h5>
+                    3Gjr Gestão Contábil
+                </h5>
+
+                <p class="mt-3">
+                    Soluções contábeis para empresas que buscam
+                    organização, acompanhamento e suporte para
+                    sua gestão.
+                </p>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+
+                <h5>
+                    Navegação
+                </h5>
+
+                <ul class="list-unstyled mt-3">
+
+                    <li class="mb-2">
+                        <a href="#inicio">Início</a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#empresa">Empresa</a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#servicos">Serviços</a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#contato">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="col-6 col-lg-4">
+
+                <h5>
+                    Informações
+                </h5>
+
+                <p class="mt-3 mb-2">
+
+                    <i class="bi bi-building me-2"></i>
+                    CNPJ: 58.622.152/0001-06
+
+                </p>
+
+                <p class="mb-2">
+
+                    <i class="bi bi-telephone me-2"></i>
+                    (77) 3082-0882
+
+                </p>
+
+                <p>
+
+                    <i class="bi bi-envelope me-2"></i>
+                    contabilidadeleitte@gmail.com
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom text-center">
+
+            <p class="mb-0">
+
+                © <span id="ano"></span>
+                3Gjr Gestão Contábil LTDA.
+                Todos os direitos reservados.
+
+            </p>
+
+            <small>
+                CNPJ 58.622.152/0001-06
+            </small>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     BOTÃO FLUTUANTE
+========================= -->
+
+<a
+    href="tel:+557730820882"
+    class="floating-contact"
+    title="Ligar para a 3Gjr Gestão Contábil"
+>
+    <i class="bi bi-telephone-fill"></i>
+</a>
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script>
+
+    // Ano automático no rodapé
+
+    document.getElementById("ano").textContent =
+        new Date().getFullYear();
+
+
+    // Fecha o menu mobile ao clicar em um link
+
+    document.querySelectorAll(".navbar-nav .nav-link").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            const menu = document.getElementById("menu");
+
+            if (menu.classList.contains("show")) {
+
+                new bootstrap.Collapse(menu).hide();
+
+            }
+
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
+```
